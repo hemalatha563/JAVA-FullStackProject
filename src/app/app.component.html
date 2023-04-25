@@ -1,0 +1,35 @@
+
+<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+  <ul class = "navbar-nav">
+    <li class = "nav-item">
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="home-page" routerLinkActive="active" class="nav-link" >homepage</a>
+   </li>
+   <li class = "nav-item">
+    <a *ngIf="loginService.isUserLoggedIn()"routerLink="contact-us" routerLinkActive="active" class="nav-link" >contactus</a>
+   </li>
+      <li class = "nav-item">
+          <a *ngIf="loginService.isUserLoggedIn()" routerLink="restaurant" routerLinkActive="active" class="nav-link" >Restaurant List</a>
+      </li>
+      <li class = "nav-item">
+          <a *ngIf="loginService.isUserLoggedIn()"routerLink="create-restaurant" routerLinkActive="active" class="nav-link" >Add Restaurant</a>
+      </li>
+      <li class = "nav-item">
+         <a *ngIf="!loginService.isUserLoggedIn()" routerLink="login-page" routerLinkActive="active" class="nav-link" >login</a>
+      </li>
+      <li class = "nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="profilecard" routerLinkActive="active" class="nav-link" >profilecard</a>
+     </li>
+     <li class = "nav-item">
+       <a *ngIf="loginService.isUserLoggedIn()" routerLink="feedback-page" routerLinkActive="active" class="nav-link" >feedbackpage</a>
+     </li>
+      <li class = "nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()"routerLink="logout-page" routerLinkActive="active" class="nav-link" >logout</a>
+     </li>
+     
+  </ul>
+</nav>
+
+<h1 class="text-center"> {{title}} </h1>
+<div class = "container">
+  <router-outlet></router-outlet>
+ </div>

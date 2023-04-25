@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+    <form id="login" method="get" action="login.php">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="usernname" [(ngModel)]="username" id="Uname" placeholder="Username">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Password" [(ngModel)]="password" id="Pass" placeholder="Password">
+        <br><br>
+        <input type="button"(click)=checkLogin() class="btn btn-success" name="log" id="log" value="Log In Here">
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br><br>
+        Dont have an account? <a href="sign-up">SignUp</a>
+    </form>
+</div>
+</body>
+</html>

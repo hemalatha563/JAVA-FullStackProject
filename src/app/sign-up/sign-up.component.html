@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <h2>SignUpForm</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=3.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+</head>
+<body>
+<div class="wrapper">
+<form class="form">
+<label>Name</label>
+    <input type="text" name="Name" class="text1" placeholder="Enter The Name" [(ngModel)]="Name" required><br>
+<label>Email</label>
+    <input type="text" name="Email" class="text1" placeholder="Enter The Email" [(ngModel)]="Email" required><br>
+<label>Password</label>
+    <input type="text" name="Password" class="text1" placeholder="Enter The Password" [(ngModel)]="Password" required><br>
+
+<label>MobileNo</label>       
+    <input type="text" class="text1" name="MobileNo" placeholder="Enter The MobilenNo" [(ngModel)]="MobileNo" required><br>
+<label>Message</label>
+    <input type="Message"class="text1" name ="Message"  placeholder="Enter The Message"  [(ngModel)]="Message" required><br>
+
+      <button class="submit formEntry" (click)="Submit()">Submit</button>
+       <span>Already have an account? <a href="login-page">LoginPage</a></span>
+    </form>
+  </div>
+
+</body>
+
+</html>

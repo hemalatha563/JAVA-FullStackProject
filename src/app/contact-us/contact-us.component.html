@@ -1,0 +1,22 @@
+
+<body>
+<h2>ContactForm</h2>
+<div >
+<form>
+    <div class="card" col-md-8>
+<label>Name</label>
+    <input type="text" name="Name" class="text1" placeholder="Enter The Name" [(ngModel)]="Name" required><br>
+<label>Email</label>
+    <input type="text" name="Email" class="text1" placeholder="Enter The Email" [(ngModel)]="Email" required><br>
+<label>MobileNumber</label>       
+    <input type="text" class="text1" name="MobileNo" placeholder="Enter The MobilenNmber" [(ngModel)]="MobileNumber" required><br>
+<label>TypeYourMessage</label>
+     <input type="TypeYourMessage" name ="TypeYourMessage"  placeholder="Enter The TypeYourMessage"  [(ngModel)]="TypeYourMessage" required><br>
+<div class="mt-2">
+      <button type="button"(click)="Message()" ><span>Send Message</span></button>
+</div>           
+    </div>
+</form>
+</div>
+</body>
+
